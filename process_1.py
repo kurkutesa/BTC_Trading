@@ -6,9 +6,9 @@ import time
 
 
 # Path of Virtual Environment
-python_bin = "/Users/sopan/miniconda3/envs/py3k/bin/python"
+python_bin = "~/miniconda3/envs/py3k/bin/python"
 # Path of the Script to be executed
-script_file = "/Users/sopan/Downloads/BTC_Trading/get_btc_new.py"
+script_file = "~/Downloads/BTC_Trading/get_btc_new.py"
 
 def job():
     subprocess.Popen([python_bin, script_file])
