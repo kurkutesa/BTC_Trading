@@ -25,8 +25,9 @@ def trade(coin_threshold_purchase,coin_threshold_sale,coin):
     else:
         print("Stay Put !!")
 
-## Try switch case
 
+# Set limits for trading
 coin_threshold_purchase, coin_threshold_sale = get_limit_value(12500,13500)
+#
 coin = get_coin_value()
 trade(coin_threshold_purchase,coin_threshold_sale,coin)
