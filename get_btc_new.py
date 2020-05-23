@@ -13,21 +13,17 @@ def get_coin_value():
 
 
 def trade(coin_threshold_purchase,coin_threshold_sale,coin):
-    cmd_trupti = """
-    osascript -e 'tell application "Messages" to send "You should considering purchasing bitcoin at  %s CAD" to buddy "Trupti Desale" '""" %coin
-    cmd_sopan = """
-    osascript -e 'tell application "Messages" to send "You should considering purchasing bitcoin at %s CAD" to buddy "My" '""" %coin
+    send_message = """
+    osascript -e 'tell application "Messages" to send "You should considering purchasing bitcoin at  %s CAD" to buddy "CONTACT_NAME_TO_SEND_MESSAGE" '""" %coin
 
     if coin_threshold_purchase >= coin:
-        print("purchase")
-        os.system(cmd_trupti)
-        os.system(cmd_sopan)
+        print("purchase BTC !!")
+        os.system(send_message)
     elif coin_threshold_sale <= coin:
-        print("SALE")
-        os.system(cmd_trupti)
-        os.system(cmd_sopan)
+        print("Sale BTC !!")
+        os.system(send_message)
     else:
-        print("Stay put !!!")
+        print("Stay Put !!")
 
 ## Try switch case
 
