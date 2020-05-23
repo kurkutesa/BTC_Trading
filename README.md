@@ -7,5 +7,5 @@ The script runs in the background after every two minutes.
 > `coin_threshold_purchase, coin_threshold_sale = get_limit_value(12500,13500)`
 
 **Run Script**
-- python process_1.py &
+- python submit_process.py &
 - disown
